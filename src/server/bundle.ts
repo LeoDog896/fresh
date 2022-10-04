@@ -1,4 +1,4 @@
-import { BuildOptions } from "https://deno.land/x/esbuild@v0.14.51/mod.js";
+import { BuildOptions } from "https://deno.land/x/esbuild@v0.15.10/mod.js";
 import { BUILD_ID } from "./constants.ts";
 import { denoPlugin, esbuild, toFileUrl } from "./deps.ts";
 import { Island, Plugin } from "./types.ts";
@@ -13,7 +13,7 @@ async function ensureEsbuildInitialized() {
   if (esbuildInitialized === false) {
     if (Deno.run === undefined) {
       esbuildInitialized = esbuild.initialize({
-        wasmURL: "https://deno.land/x/esbuild@v0.14.51/esbuild.wasm",
+        wasmURL: "https://deno.land/x/esbuild@v0.15.10/esbuild.wasm",
         worker: false,
       });
     } else {

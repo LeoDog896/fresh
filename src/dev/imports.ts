@@ -6,17 +6,17 @@ export const RECOMMENDED_TWIND_VERSION = "0.16.17";
 
 export function freshImports(imports: Record<string, string>) {
   imports["$fresh/"] = new URL("../../", import.meta.url).href;
-  imports["preact"] = `https://esm.sh/preact@${RECOMMENDED_PREACT_VERSION}`;
-  imports["preact/"] = `https://esm.sh/preact@${RECOMMENDED_PREACT_VERSION}/`;
+  imports["preact"] = `https://esm.sh/preact@10.11.0`;
+  imports["preact/"] = `https://esm.sh/preact@10.11.0/`;
   imports["preact-render-to-string"] =
-    `https://esm.sh/*preact-render-to-string@${RECOMMENDED_PREACT_RTS_VERSION}`;
+    `https://esm.sh/*preact-render-to-string@5.2.4`;
   imports["@preact/signals"] =
-    `https://esm.sh/*@preact/signals@${RECOMMENDED_PREACT_SIGNALS_VERSION}`;
+    `https://esm.sh/*@preact/signals@1.1.1`;
   imports["@preact/signals-core"] =
-    `https://esm.sh/*@preact/signals-core@${RECOMMENDED_PREACT_SIGNALS_CORE_VERSION}`;
+    `https://esm.sh/*@preact/signals-core@1.2.1`;
 }
 
 export function twindImports(imports: Record<string, string>) {
-  imports["twind"] = `https://esm.sh/twind@${RECOMMENDED_TWIND_VERSION}`;
-  imports["twind/"] = `https://esm.sh/twind@${RECOMMENDED_TWIND_VERSION}/`;
+  imports["twind"] = `https://esm.sh/twind@0.16.17`;
+  imports["twind/"] = `https://esm.sh/twind@0.16.17/`;
 }

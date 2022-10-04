@@ -195,14 +195,14 @@ function GettingStarted(props: { origin: string }) {
           </a>{" "}
           version 1.25.0 or higher is required.{" "}
           <a
-            href="https://deno.land/manual/getting_started/installation"
+            href="https://deno.land/manual/getting_started/installation" // i-deno-outdated
             class="text-blue-600 hover:underline"
           >
             Install
           </a>{" "}
           or{" "}
           <a
-            href="https://deno.land/manual/getting_started/installation#updating"
+            href="https://deno.land/manual/getting_started/installation#updating" // i-deno-outdated
             class="text-blue-600 hover:underline"
           >
             update
