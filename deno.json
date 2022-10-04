@@ -3,7 +3,8 @@
     "test": "deno test -A && deno check --config=www/deno.json www/main.ts www/dev.ts && deno check init.ts",
     "fixture": "deno run -A --watch=static/,routes/ tests/fixture/dev.ts",
     "www": "deno run -A --watch=www/static/,www/routes/,docs/ www/dev.ts",
-    "screenshot": "deno run -A www/utils/screenshot.ts"
+    "screenshot": "deno run -A www/utils/screenshot.ts",
+    "update": "deno run --allow-read=./ --allow-net --allow-write=./ https://deno.land/x/deno_outdated/cli.ts"
   },
   "importMap": "./.vscode/import_map.json",
   "compilerOptions": {
